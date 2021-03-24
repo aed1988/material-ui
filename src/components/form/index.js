@@ -1,19 +1,20 @@
-import { TextField, makeStyles, Button } from "@material-ui/core";
+import {
+  TextField,
+  makeStyles,
+  Button,
+  FormControlLabel,
+  Checkbox,
+} from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
   root: {
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
-    marginTop: theme.spacing(8),
+    width: "100%",
     "& > *": {
       margin: theme.spacing(1),
     },
-  },
-  form: {
-    display: "flex",
-    flexDirection: "column",
-    width: "100%",
   },
 }));
 
@@ -39,5 +40,19 @@ Form.Button = function FormInput({ children, ...restProps }) {
     <Button className={useStyles().button} {...restProps}>
       {children}
     </Button>
+  );
+};
+
+Form.Checkbox = function FormCheckbox({ children, ...restProps }) {
+  return (
+    <FormControlLabel
+      control={
+        <Checkbox
+          className={useStyles().checkbox}
+          value="remember"
+          color="primary"
+        />
+      }
+    />
   );
 };
