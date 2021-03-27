@@ -7,7 +7,7 @@ const useStyles = makeStyles((theme) => ({
     paddingBottom: theme.spacing(props.pb) || theme.spacing(2),
     paddingRight: theme.spacing(props.pr) || theme.spacing(0),
     display: "flex",
-    flexDirection: props.direction || "column",
+    flexDirection: props.direction || "row",
     alignItems: "center",
     backgroundColor: theme.palette.grey[50],
   }),
