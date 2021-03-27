@@ -17,5 +17,6 @@ This project is to develop my understanding and practice use of using material U
 
 [ ] Build a dashboard  
 24/03/2021 - Decided to test using components and defining everything in containers.
+27/03/2021 - Files are becoming very cluttered. Moved all styling into './component', working on functionality in './containers' and will build pages at a later date. Need to format the table to render based on props, headings and data.
 
 [ ] Build a shop-like design
